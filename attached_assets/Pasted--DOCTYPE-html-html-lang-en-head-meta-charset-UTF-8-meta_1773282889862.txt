@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Larsen Spa Care provides professional hot tub maintenance in Desert Color Resort and St. George, Utah. Bi-weekly service, monthly service, drain & refill, rental hot tub care, and easy quote requests by call, text, or form." />
+  <title>Larsen Spa Care | Professional Hot Tub Maintenance in Desert Color</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css" />
+  <style>
+    :root {
+      --brand: #0ea5a4;
+      --brand-dark: #0b6b73;
+      --accent: #ff8a3d;
+      --sand: #f8f3e8;
+      --text-soft: #5a6572;
+      --card: rgba(255,255,255,.88);
+      --shadow: 0 16px 40px rgba(16, 24, 40, .08);
+      --radius: 1.2rem;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background:
+        radial-gradient(circle at top right, rgba(14,165,164,.12), transparent 28%),
+        linear-gradient(180deg, #fffdf8 0%, #f7fbfc 100%);
+    }
+
+    nav.container-fluid {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(12px);
+      background: rgba(255,255,255,.84);
+      border-bottom: 1px solid rgba(0,0,0,.06);
+    }
+
+    .top-phone a {
+      text-decoration: none;
+      color: var(--brand-dark);
+      font-weight: 700;
+    }
+
+    .hero {
+      padding: 3.5rem 0 2rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      background: rgba(14,165,164,.1);
+      color: var(--brand-dark);
+      padding: .45rem .85rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: .9rem;
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      color: var(--text-soft);
+      font-size: 1.08rem;
+      max-width: 62ch;
+    }
+
+    .button-row {
+      display: flex;
+      gap: .9rem;
+      flex-wrap: wrap;
+      margin: 1.4rem 0 1rem;
+    }
+
+    .button-row a[role="button"],
+    button[type="submit"] {
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      border: none;
+    }
+
+    .trust-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .65rem;
+      margin-top: 1rem;
+    }
+
+    .trust-chip {
+      background: white;
+      border: 1px solid rgba(0,0,0,.05);
+      border-radius: 999px;
+      padding: .45rem .75rem;
+      font-size: .92rem;
+      box-shadow: 0 10px 22px rgba(16,24,40,.04);
+    }
+
+    .hero-card,
+    .card,
+    .price-card,
+    .faq-item,
+    .guarantee {
+      background: var(--card);
+      border: 1px solid rgba(0,0,0,.05);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card {
+      padding: 1.2rem;
+    }
+
+    .hero-card h4,
+    .guarantee h3,
+    .price-card h3,
+    .card h4 {
+      margin-bottom: .35rem;
+    }
+
+    .hero-list,
+    .checklist {
+      margin: 0;
+      padding-left: 1.15rem;
+    }
+
+    .section-space {
+      padding: 2.2rem 0;
+    }
+
+    .cards,
+    .pricing-grid,
+    .faq-grid,
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.2rem;
+    }
+
+    .card,
+    .price-card,
+    .faq-item,
+    .guarantee {
+      padding: 1.2rem;
+      height: 100%;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--brand-dark);
+      margin: .3rem 0 .75rem;
+    }
+
+    .muted { color: var(--text-soft); }
+
+    .featured {
+      border: 2px solid rgba(14,165,164,.25);
+      transform: translateY(-4px);
+    }
+
+    .section-intro {
+      max-width: 68ch;
+      color: var(--text-soft);
+    }
+
+    .step-number {
+      width: 2.2rem;
+      height: 2.2rem;
+      border-radius: 999px;
+      display: inline-grid;
+      place-items: center;
+      background: rgba(14,165,164,.12);
+      color: var(--brand-dark);
+      font-weight: 800;
+      margin-bottom: .65rem;
+    }
+
+    .guarantee {
+      background: linear-gradient(135deg, rgba(14,165,164,.12), rgba(255,255,255,.98));
+    }
+
+    .quote-wrap article {
+      background: linear-gradient(135deg, rgba(14,165,164,.1), rgba(255,255,255,.98));
+      border: 1px solid rgba(14,165,164,.15);
+      border-radius: 1.3rem;
+      box-shadow: var(--shadow);
+    }
+
+    .quote-note {
+      font-size: .92rem;
+      color: var(--text-soft);
+      margin-top: .75rem;
+    }
+
+    .cta-banner {
+      padding: 1.3rem;
+      border-radius: 1.2rem;
+      background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+      color: white;
+      box-shadow: var(--shadow);
+    }
+
+    .cta-banner a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    footer {
+      padding: 2rem 0 3rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      align-items: start;
+    }
+
+    textarea {
+      min-height: 140px;
+    }
+
+    @media (max-width: 768px) {
+      .hero { padding-top: 1.6rem; }
+      .featured { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li><strong>Larsen Spa Care</strong></li>
+    </ul>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li class="top-phone"><a href="tel:8016616107">Call/Text: 801-661-6107</a></li>
+      <li><a href="#quote" role="button">Get Quote</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="grid hero">
+      <section>
+        <span class="eyebrow">Professional Hot Tub Maintenance in Desert Color</span>
+        <hgroup>
+          <h2>Keep your hot tub clean, balanced, and always ready to enjoy</h2>
+          <h3>Reliable spa care for Desert Color Resort homes, rentals, and second properties</h3>
+        </hgroup>
+        <p class="lead">Larsen Spa Care helps homeowners and rental owners keep their hot tubs guest-ready with dependable maintenance, simple pricing, fast communication, and local service you can count on.</p>
+        <div class="button-row">
+          <a href="tel:8016616107" role="button">Call Now</a>
+          <a href="sms:8016616107" class="secondary">Text Us</a>
+          <a href="#quote" class="secondary">Request a Quote</a>
+        </div>
+        <div class="trust-row">
+          <span class="trust-chip">Bi-weekly service</span>
+          <span class="trust-chip">Monthly service</span>
+          <span class="trust-chip">Vacation rental friendly</span>
+          <span class="trust-chip">Satisfaction guaranteed</span>
+        </div>
+      </section>
+
+      <section>
+        <div class="hero-card">
+          <h4>Why owners choose Larsen Spa Care</h4>
+          <p class="muted">Built for the way Desert Color properties are actually used.</p>
+          <ul class="hero-list">
+            <li>Simple pricing with no confusing packages</li>
+            <li>Fast local response by call, text, or form</li>
+            <li>Great fit for vacation rentals and frequent guest turnover</li>
+            <li>Regular water balancing and preventative care</li>
+            <li>Easy for full-time residents and out-of-town owners</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="section-space" id="services">
+      <hgroup>
+        <h2>Hot tub services</h2>
+        <h3>Everything you need to keep your spa clean, safe, and easy to manage</h3>
+      </hgroup>
+      <p class="section-intro">Southern Utah heat, dust, evaporation, and heavy use can quickly throw off water chemistry. Our service plans are built to keep your hot tub clean and ready without the hassle of doing it yourself.</p>
+      <div class="cards">
+        <article class="card">
+          <h4>Bi-Weekly Maintenance</h4>
+          <p>Great for consistently used spas that need dependable upkeep and balanced water.</p>
+          <ul class="checklist">
+            <li>Water testing and chemical balancing</li>
+            <li>Light debris removal</li>
+            <li>Visual equipment check</li>
+            <li>Spa condition inspection</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>Monthly Maintenance</h4>
+          <p>A simple option for lighter-use tubs that still need routine professional attention.</p>
+          <ul class="checklist">
+            <li>Full water testing</li>
+            <li>Chemical balancing</li>
+            <li>Filter rinse</li>
+            <li>Preventative inspection</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>Drain &amp; Refill</h4>
+          <p>Refresh your spa with a clean restart when water quality drops or buildup becomes an issue.</p>
+          <ul class="checklist">
+            <li>Complete water drain</li>
+            <li>Surface wipe-down</li>
+            <li>Refill and startup</li>
+            <li>Fresh balancing</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h4>Vacation Rental Spa Care</h4>
+          <p>Reliable service for rental properties that need to stay safe, clean, and guest-ready.</p>
+          <ul class="checklist">
+            <li>Consistent scheduling</li>
+            <li>Service built for guest turnover</li>
+            <li>Perfect for owners managing from out of town</li>
+            <li>All rentals welcome</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-space" id="pricing">
+      <hgroup>
+        <h2>Simple pricing</h2>
+        <h3>Clear service options that make it easy to get started</h3>
+      </hgroup>
+      <div class="pricing-grid">
+        <article class="price-card featured">
+          <h3>Bi-Weekly Service</h3>
+          <p class="price">$60</p>
+          <p class="muted">Per visit</p>
+          <ul class="checklist">
+            <li>Water testing</li>
+            <li>Chemical balancing</li>
+            <li>Light debris removal</li>
+            <li>Equipment check</li>
+            <li>Spa condition inspection</li>
+          </ul>
+          <p><a href="#quote" role="button">Choose Bi-Weekly</a></p>
+        </article>
+        <article class="price-card">
+          <h3>Monthly Service</h3>
+          <p class="price">$99</p>
+          <p class="muted">Per visit</p>
+          <ul class="checklist">
+            <li>Full water testing</li>
+            <li>Chemical balancing</li>
+            <li>Filter rinse</li>
+            <li>Preventative inspection</li>
+          </ul>
+          <p><a href="#quote" role="button">Choose Monthly</a></p>
+        </article>
+        <article class="price-card">
+          <h3>Drain &amp; Refill</h3>
+          <p class="price">$100</p>
+          <p class="muted">Starting price</p>
+          <ul class="checklist">
+            <li>Drain tub completely</li>
+            <li>Wipe down shell</li>
+            <li>Refill and startup</li>
+            <li>Fresh water balancing</li>
+          </ul>
+          <p><a href="#quote" role="button">Book Drain &amp; Refill</a></p>
+        </article>
+      </div>
+      <p class="quote-note">Pricing may vary for unusually large tubs, severe neglect, or special access conditions. Most Desert Color properties will fit these standard rates.</p>
+    </section>
+
+    <section class="section-space">
+      <div class="grid">
+        <section>
+          <hgroup>
+            <h2>Our Clean Water Guarantee</h2>
+            <h3>Service you can feel confident recommending to family, guests, and renters</h3>
+          </hgroup>
+          <div class="guarantee">
+            <p>We stand behind every service visit. If something isn’t right, we’ll come back and make it right — no hassle.</p>
+            <p>Our goal is simple: <strong>clean water, balanced chemistry, and a hot tub that’s always ready to enjoy.</strong></p>
+          </div>
+        </section>
+        <section>
+          <hgroup>
+            <h2>Perfect for Desert Color Resort</h2>
+            <h3>Built for homeowners, second homes, and rental properties</h3>
+          </hgroup>
+          <div class="card">
+            <p>We provide professional hot tub maintenance for properties in <strong>Desert Color Resort</strong> and the surrounding <strong>St. George</strong> area. Our service is designed for local owners, remote owners, and rentals that need dependable upkeep without extra stress.</p>
+            <ul class="checklist">
+              <li>Desert Color homeowners</li>
+              <li>Vacation rental properties</li>
+              <li>Second homes</li>
+              <li>Owners who want easy, efficient service</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <hgroup>
+        <h2>How it works</h2>
+        <h3>The easiest way to keep your hot tub clean all season</h3>
+      </hgroup>
+      <div class="steps-grid">
+        <article class="card">
+          <div class="step-number">1</div>
+          <h4>Request service</h4>
+          <p>Call, text, or fill out the quick form with your property details and service needs.</p>
+        </article>
+        <article class="card">
+          <div class="step-number">2</div>
+          <h4>Choose your plan</h4>
+          <p>We’ll help you choose the right option for your spa, property type, and usage level.</p>
+        </article>
+        <article class="card">
+          <div class="step-number">3</div>
+          <h4>Enjoy a cleaner spa</h4>
+          <p>Your water stays balanced, clear, and ready to use with reliable ongoing care.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-space" id="faq">
+      <hgroup>
+        <h2>Frequently asked questions</h2>
+        <h3>Quick answers for homeowners and rental owners</h3>
+      </hgroup>
+      <div class="faq-grid">
+        <article class="faq-item">
+          <h4>How often should my hot tub be serviced?</h4>
+          <p>Most hot tubs do best with routine professional service, especially in warm climates or high-use rental properties. Bi-weekly service is a strong fit for many Desert Color owners.</p>
+        </article>
+        <article class="faq-item">
+          <h4>Do you service vacation rentals?</h4>
+          <p>Yes. Larsen Spa Care works with all rentals and is designed for guest-ready spa care.</p>
+        </article>
+        <article class="faq-item">
+          <h4>What is included in regular maintenance?</h4>
+          <p>Water testing, chemical balancing, light cleaning, filter attention when applicable, and a visual inspection of the spa’s condition.</p>
+        </article>
+        <article class="faq-item">
+          <h4>Do you offer drain and refill service?</h4>
+          <p>Yes. We offer drain and refill service starting at $100, including wipe-down, refill, startup, and balancing.</p>
+        </article>
+        <article class="faq-item">
+          <h4>Can I get service if I do not live in town?</h4>
+          <p>Yes. We work with remote owners, second homes, and rental properties that need reliable local support.</p>
+        </article>
+        <article class="faq-item">
+          <h4>What is the fastest way to get started?</h4>
+          <p>Text or call <a href="tel:8016616107">801-661-6107</a>, or submit the quote form below with your property details.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="cta-banner">
+        <strong>Need service fast?</strong>
+        <p style="margin:.4rem 0 0;">Call or text <a href="tel:8016616107">801-661-6107</a> and we’ll help you get your spa on the schedule.</p>
+      </div>
+    </section>
+  </main>
+
+  <section aria-label="Subscribe example" class="quote-wrap" id="quote">
+    <div class="container">
+      <article>
+        <hgroup>
+          <h2>Request a quote</h2>
+          <h3>Online form, call, or text — whichever is easiest for you</h3>
+        </hgroup>
+        <form class="grid" id="quoteForm">
+          <input type="text" id="firstname" name="firstname" placeholder="Your name" aria-label="Your name" required />
+          <input type="tel" id="phone" name="phone" placeholder="Phone number" aria-label="Phone number" required />
+          <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email address" required />
+          <input type="text" id="address" name="address" placeholder="Property address" aria-label="Property address" required />
+          <select id="propertyType" name="propertyType" aria-label="Property type" required>
+            <option value="" selected disabled>Property type</option>
+            <option>Home</option>
+            <option>Vacation Rental</option>
+          </select>
+          <select id="serviceNeeded" name="serviceNeeded" aria-label="Service needed" required>
+            <option value="" selected disabled>Service needed</option>
+            <option>Bi-Weekly Maintenance</option>
+            <option>Monthly Maintenance</option>
+            <option>Drain & Refill</option>
+            <option>Not Sure Yet</option>
+          </select>
+          <textarea id="message" name="message" placeholder="Tell us about your hot tub, current condition, or preferred timing" aria-label="Message"></textarea>
+          <button type="submit">Send Quote Request</button>
+        </form>
+        <p class="quote-note">This form opens your email app with your request pre-filled so you can send it instantly. You can also call or text anytime at <a href="tel:8016616107">801-661-6107</a>.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>Larsen Spa Care</strong>
+        <p class="muted">Professional Hot Tub Maintenance in Desert Color</p>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <p><a href="tel:8016616107">801-661-6107</a><br /><a href="mailto:beckhamglarsen@gmail.com">beckhamglarsen@gmail.com</a></p>
+      </div>
+      <div>
+        <strong>Service Area</strong>
+        <p>Desert Color Resort<br />St. George, Utah</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('quoteForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const name = document.getElementById('firstname').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const propertyType = document.getElementById('propertyType').value;
+      const serviceNeeded = document.getElementById('serviceNeeded').value;
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent('Quote Request - Larsen Spa Care');
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Phone: ' + phone + '\n' +
+        'Email: ' + email + '\n' +
+        'Property Address: ' + address + '\n' +
+        'Property Type: ' + propertyType + '\n' +
+        'Service Needed: ' + serviceNeeded + '\n\n' +
+        'Message:\n' + message
+      );
+
+      window.location.href = 'mailto:beckhamglarsen@gmail.com?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>

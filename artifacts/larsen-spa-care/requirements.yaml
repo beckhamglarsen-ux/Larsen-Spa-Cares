@@ -1,0 +1,20 @@
+packages:
+  "framer-motion": "For premium scroll animations and micro-interactions"
+  "react-hook-form": "For the quote request form handling"
+  "@hookform/resolvers": "For Zod integration with the form"
+  "zod": "For form validation schemas"
+  "clsx": "For conditional class names"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/larsen-spa-care/public/images/hero-bg.png"
+    description: "Abstract elegant soft water surface ripples in very light warm teal and sandy beige colors, shallow depth of field, premium luxury spa resort feeling, minimal and clean"
+    aspect_ratio: "16:9"
+  - path: "artifacts/larsen-spa-care/public/images/sand-texture.png"
+    description: "Subtle seamless fine sand texture, very light warm beige, minimal, clean, overhead shot, uniform lighting"
+    aspect_ratio: "16:9"
+
+notes:
+  - Landing page is purely static, no backend required
+  - The quote form uses standard web mailto: links to send data to the owner's email
+  - Framer motion is used for reveal animations on scroll

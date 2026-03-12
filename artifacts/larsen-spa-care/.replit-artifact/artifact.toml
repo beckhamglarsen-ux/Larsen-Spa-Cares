@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Larsen Spa Care"
+version = "1.0.0"
+id = "artifacts/larsen-spa-care"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 21594
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/larsen-spa-care run dev"
+
+[services.env]
+PORT = "21594"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/larsen-spa-care", "run", "build"]
+publicDir = "artifacts/larsen-spa-care/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
