@@ -6,6 +6,7 @@ import { Pricing } from "@/components/sections/Pricing";
 import { Features } from "@/components/sections/Features";
 import { HowItWorks } from "@/components/sections/HowItWorks";
 import { FAQ } from "@/components/sections/FAQ";
+import { Reviews } from "@/components/sections/Reviews";
 import { QuoteForm } from "@/components/sections/QuoteForm";
 
 export default function LandingPage() {
@@ -20,6 +21,7 @@ export default function LandingPage() {
         <Features />
         <HowItWorks />
         <FAQ />
+        <Reviews />
         <QuoteForm />
       </main>
 

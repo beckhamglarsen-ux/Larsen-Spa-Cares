@@ -40,7 +40,15 @@ export function Footer() {
               </a>
             </div>
           </div>
-
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary transition-colors text-white">
+              <Phone className="w-4 h-4" />
+            </div>
+            <div>
+              <div className="text-lg">Mon–Sat</div>
+              <div className="text-background/60">8:00 AM – 6:00 PM</div>
+            </div>
+          </div>
           <div className="flex flex-col gap-6">
             <h4 className="font-display font-bold text-xl text-white">Service Area</h4>
             <div className="flex items-start gap-3">
