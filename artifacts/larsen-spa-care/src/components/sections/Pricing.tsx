@@ -44,14 +44,14 @@ export function Pricing() {
           >
             <h3 className="text-xl font-bold font-display text-foreground mb-2">Monthly</h3>
             <div className="flex items-baseline gap-1 mb-6">
-              <span className="text-4xl font-bold text-foreground">$99</span>
+              <span className="text-4xl font-bold text-foreground">$110</span>
               <span className="text-muted-foreground font-medium">/visit</span>
             </div>
             <p className="text-muted-foreground mb-8 min-h-[48px]">Perfect for lower-use personal spas that just need an expert touch.</p>
             <Button variant="outline" className="w-full bg-transparent" onClick={() => scrollTo("quote")}>Choose Monthly</Button>
           </motion.div>
 
-          {/* Bi-Weekly (Featured) */}
+          {/* Twice a Week (Featured) */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -61,12 +61,12 @@ export function Pricing() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider shadow-sm whitespace-nowrap">
               Most Popular
             </div>
-            <h3 className="text-xl font-bold font-display text-white mb-2">Bi-Weekly</h3>
+            <h3 className="text-xl font-bold font-display text-white mb-2">Twice a Week</h3>
             <div className="flex items-baseline gap-1 mb-6 text-white">
-              <span className="text-5xl font-bold">$60</span>
+              <span className="text-5xl font-bold">$35</span>
               <span className="text-white/80 font-medium">/visit</span>
             </div>
-            <p className="text-white/90 mb-8 min-h-[48px]">The ideal balance for pristine water in warm climates and frequent use.</p>
+            <p className="text-white/90 mb-8 min-h-[48px]">Ideal for high-use spas that need frequent attention, cleaner water, and consistent balance.</p>
             <ul className="space-y-4 mb-8">
               {[
                 "Priority scheduling",
@@ -83,7 +83,7 @@ export function Pricing() {
               ))}
             </ul>
             <Button variant="accent" className="w-full bg-white text-primary hover:bg-white/90" size="lg" onClick={() => scrollTo("quote")}>
-              Choose Bi-Weekly
+              Choose Twice a Week
             </Button>
           </motion.div>
 
@@ -97,9 +97,9 @@ export function Pricing() {
             <h3 className="text-xl font-bold font-display text-foreground mb-2">Drain & Refill</h3>
             <div className="flex items-baseline gap-1 mb-6">
               <span className="text-lg font-bold text-muted-foreground mr-1">Starting at</span>
-              <span className="text-4xl font-bold text-foreground">$100</span>
+              <span className="text-4xl font-bold text-foreground">$130</span>
             </div>
-            <p className="text-muted-foreground mb-8 min-h-[48px]">Complete water reset recommended every 3-4 months.</p>
+            <p className="text-muted-foreground mb-8 min-h-[48px]">Complete water reset recommended every 2-3 months.</p>
             <Button variant="outline" className="w-full bg-transparent" onClick={() => scrollTo("quote")}>Schedule Reset</Button>
           </motion.div>
 

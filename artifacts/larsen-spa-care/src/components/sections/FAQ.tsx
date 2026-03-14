@@ -4,7 +4,7 @@ import { HelpCircle } from "lucide-react";
 const faqs = [
   {
     q: "How often should my hot tub be serviced?",
-    a: "Most hot tubs do best with routine professional service, especially in warm climates or high-use rental properties. Bi-weekly service is a strong fit for many Desert Color owners."
+    a: "Most hot tubs do best with routine professional service, especially in warm climates or high-use rental properties. Twice-a-week service is ideal for high-use spas, while monthly service can work well for lighter-use properties."
   },
   {
     q: "Do you service vacation rentals?",
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Do you offer drain and refill service?",
-    a: "Yes. We offer drain and refill service starting at $100, including wipe-down, refill, startup, and balancing."
+    a: "Yes. We offer drain and refill service starting at $130, including wipe-down, refill, startup, and balancing."
   },
   {
     q: "Can I get service if I do not live in town?",
