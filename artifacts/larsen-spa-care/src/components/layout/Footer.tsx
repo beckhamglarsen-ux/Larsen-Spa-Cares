@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export function Footer() {
   return (
@@ -42,7 +42,7 @@ export function Footer() {
           </div>
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-primary transition-colors text-white">
-              <Phone className="w-4 h-4" />
+              <Clock className="w-4 h-4" />
             </div>
             <div>
               <div className="text-lg">Mon–Sat</div>
