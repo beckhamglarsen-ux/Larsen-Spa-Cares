@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { motion } from "framer-motion";
-import { Phone, Send } from "lucide-react";
+import { Phone, Send, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const formSchema = z.object({
@@ -51,7 +51,7 @@ export function QuoteForm() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-white">
             <strong className="text-2xl font-display">Need service fast?</strong>
             <p className="text-lg opacity-90 flex items-center gap-2">
-              Call or text <a href="tel:8016616107" className="font-bold underline underline-offset-4 hover:text-accent transition-colors">801-661-6107</a>
+              Call <a href="tel:8016616107" className="font-bold underline underline-offset-4 hover:text-accent transition-colors">801-661-6107</a>
             </p>
           </div>
         </div>
@@ -78,14 +78,30 @@ export function QuoteForm() {
                   </p>
                 </div>
 
-                <div className="relative z-10 space-y-6">
-                  <a href="tel:8016616107" className="flex items-center gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/20 transition-colors backdrop-blur-sm group border border-white/10">
+                <div className="relative z-10 space-y-4">
+                  <a
+                    href="tel:8016616107"
+                    className="flex items-center gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/20 transition-colors backdrop-blur-sm group border border-white/10"
+                  >
                     <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
                       <Phone className="w-6 h-6" />
                     </div>
                     <div>
-                      <div className="text-sm text-white/70 font-medium">Call or Text</div>
+                      <div className="text-sm text-white/70 font-medium">Call Now</div>
                       <div className="text-lg font-bold">801-661-6107</div>
+                    </div>
+                  </a>
+
+                  <a
+                    href="sms:8016616107?body=Hi%2C%20I%27d%20like%20a%20quote."
+                    className="flex items-center gap-4 p-4 rounded-xl bg-white/10 hover:bg-white/20 transition-colors backdrop-blur-sm group border border-white/10"
+                  >
+                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                      <MessageSquare className="w-6 h-6" />
+                    </div>
+                    <div>
+                      <div className="text-sm text-white/70 font-medium">Text Us</div>
+                      <div className="text-lg font-bold">Quick Response</div>
                     </div>
                   </a>
                 </div>
