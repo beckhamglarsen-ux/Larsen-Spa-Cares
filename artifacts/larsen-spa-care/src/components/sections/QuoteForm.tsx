@@ -101,7 +101,7 @@ export function QuoteForm() {
                     </div>
                     <div>
                       <div className="text-sm text-white/70 font-medium">Text Us</div>
-                      <div className="text-lg font-bold">Quick Response</div>
+                      <div className="text-lg font-bold">Rapid Response</div>
                     </div>
                   </a>
                 </div>

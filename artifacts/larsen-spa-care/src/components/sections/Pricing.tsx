@@ -63,7 +63,7 @@ export function Pricing() {
             </div>
             <h3 className="text-xl font-bold font-display text-white mb-2">Twice a Week</h3>
             <div className="flex items-baseline gap-1 mb-6 text-white">
-              <span className="text-5xl font-bold">$35</span>
+              <span className="text-5xl font-bold">$20</span>
               <span className="text-white/80 font-medium">/visit</span>
             </div>
             <p className="text-white/90 mb-8 min-h-[48px]">Ideal for high-use spas that need frequent attention, cleaner water, and consistent balance.</p>
