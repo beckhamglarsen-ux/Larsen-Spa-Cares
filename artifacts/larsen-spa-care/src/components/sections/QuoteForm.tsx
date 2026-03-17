@@ -170,7 +170,7 @@ export function QuoteForm() {
                         defaultValue=""
                       >
                         <option value="" disabled>Service needed</option>
-                        <option value="Bi-Weekly Maintenance">Bi-Weekly Maintenance</option>
+                        <option value="Twice a Week Maintenance">Twice a Week Maintenance</option>
                         <option value="Monthly Maintenance">Monthly Maintenance</option>
                         <option value="Drain & Refill">Drain & Refill</option>
                         <option value="Not Sure Yet">Not Sure Yet</option>
