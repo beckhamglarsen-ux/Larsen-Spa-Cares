@@ -4,7 +4,7 @@ import { Droplets, CalendarDays, RefreshCw, Key } from "lucide-react";
 const services = [
   {
     title: "Twice a Week Maintenance",
-    price: "$20/visit",
+    price: "$15/visit",
     icon: <Droplets className="w-8 h-8" />,
     description: "A high-frequency service option for spas that need more consistent cleaning and balancing.",
     features: [

@@ -36,7 +36,7 @@ export function Navbar() {
     { name: "Services", id: "services" },
     { name: "Pricing", id: "pricing" },
     { name: "FAQ", id: "faq" },
-    { name: "Reviews", id: "reviews" },
+    { name: "Why Us", id: "why-us" },
   ];
   
   return (
