@@ -74,7 +74,7 @@ export function Hero() {
 
             {/* Trust Chips */}
             <div className="flex flex-wrap items-center gap-y-3 gap-x-6 mt-12 pt-8 border-t border-border/60">
-              <TrustChip icon={<Droplets className="w-4 h-4" />} text="Bi-weekly service" />
+              <TrustChip icon={<Droplets className="w-4 h-4" />} text="Twice-a-week service" />
               <TrustChip icon={<ShieldCheck className="w-4 h-4" />} text="Satisfaction guaranteed" />
               <TrustChip icon={<Home className="w-4 h-4" />} text="Vacation rental friendly" />
             </div>
