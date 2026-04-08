@@ -1,11 +1,25 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Phone, Send, MessageSquare, CheckCircle2, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 export function QuoteForm() {
   const [state, handleSubmit] = useForm("xgopqvze");
   const [showForm, setShowForm] = useState(true);
+
+  useEffect(() => {
+    if (state.succeeded) {
+      window.gtag?.("event", "conversion", {
+        send_to: "AW-18041594029/tymkCKnuw48cEK3B85pD",
+      });
+    }
+  }, [state.succeeded]);
 
   const InputClass =
     "w-full px-4 py-3.5 rounded-xl bg-background border-2 border-border/60 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-200";
