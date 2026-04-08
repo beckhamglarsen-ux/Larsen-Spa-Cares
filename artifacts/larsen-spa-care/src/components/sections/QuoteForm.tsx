@@ -144,13 +144,13 @@ export function QuoteForm() {
 
                 <div className="relative z-10">
                   <h2 className="text-3xl font-bold font-display mb-4">
-                    Request a quote
+                    Request A Quote
                   </h2>
-                  <p className="text-white/80 leading-relaxed mb-4">
+                  <p className="text-lg text-white/80 leading-relaxed mb-4">
                     Online form, call, or text — whichever is easiest for you. Fill out your details and we’ll get back to you during business hours.
                   </p>
 
-                  <p className="text-sm text-white/80 mb-8">
+                  <p className="text-base text-white/80 mb-8">
                     Mon–Sat, 8:00 AM – 6:00 PM
                   </p>
                 </div>
