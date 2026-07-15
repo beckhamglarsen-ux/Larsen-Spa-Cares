@@ -3,29 +3,42 @@ import { Droplets, CalendarDays, RefreshCw, Key } from "lucide-react";
 
 const services = [
   {
-    title: "Twice a Week Maintenance",
-    price: "$15/visit",
-    icon: <Droplets className="w-8 h-8" />,
-    description: "A high-frequency service option for spas that need more consistent cleaning and balancing.",
-    features: [
-      "Water testing and balancing",
-      "Sanitizer level adjustment",
-      "Filter inspection and light cleaning",
-      "Surface wipe-down",
-      "Debris removal"
-    ]
-  },
-  {
     title: "Monthly Maintenance",
-    price: "$110/visit",
+    price: "$110/mo",
     icon: <CalendarDays className="w-8 h-8" />,
-    description: "Perfect for lower-use personal spas that need an expert check.",
+    description: "One expert visit per month — perfect for lower-use personal spas.",
     features: [
       "Comprehensive water chemistry check",
       "Deep shock treatment",
       "Filter deep clean",
       "Equipment visual inspection",
       "Cover cleaning"
+    ]
+  },
+  {
+    title: "Twice a Month Maintenance",
+    price: "$120/mo",
+    icon: <CalendarDays className="w-8 h-8" />,
+    description: "Two visits per month, on a consistent day — steady care for regularly used spas.",
+    features: [
+      "Water testing and balancing",
+      "Sanitizer level adjustment",
+      "Filter inspection and cleaning",
+      "Surface wipe-down",
+      "Cover cleaning"
+    ]
+  },
+  {
+    title: "Weekly Maintenance",
+    price: "$130/mo",
+    icon: <Droplets className="w-8 h-8" />,
+    description: "Four visits per month — the most consistent water quality for high-use spas and rentals.",
+    features: [
+      "Water testing and balancing",
+      "Sanitizer level adjustment",
+      "Filter inspection and light cleaning",
+      "Surface wipe-down",
+      "Debris removal"
     ]
   },
   {
@@ -63,11 +76,11 @@ export function Services() {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold font-display text-foreground mb-4">Complete Spa Maintenance</h2>
           <p className="text-lg text-muted-foreground">
-            We offer tailored service plans designed for the unique demands of Desert Color properties, ensuring your hot tub is pristine year-round.
+            Tailored service plans for homes and rentals across St. George &amp; Washington County — including Desert Color, Red Rock, and Black Desert — keeping your hot tub pristine year-round.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}

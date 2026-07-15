@@ -18,7 +18,7 @@ export function Footer() {
             </div>
 
             <p className="text-background/70 text-lg max-w-sm mt-2">
-              Professional Hot Tub Maintenance in Desert Color. Keeping your spa ready to enjoy.
+              Crystal-Clear Hot Tub Care in St. George, Utah. Keeping your spa ready to enjoy.
             </p>
           </div>
 
@@ -66,9 +66,9 @@ export function Footer() {
                 <MapPin className="w-4 h-4" />
               </div>
               <p className="text-lg leading-relaxed">
-                Desert Color Resort
+                Desert Color · Red Rock · Black Desert
                 <br />
-                St. George, Utah
+                St. George &amp; Washington County, Utah
               </p>
             </div>
           </div>

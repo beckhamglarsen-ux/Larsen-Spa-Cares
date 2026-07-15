@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { Phone, Send, MessageSquare, CheckCircle2, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,8 +10,7 @@ declare global {
 }
 
 export function QuoteForm() {
-  const [state, handleSubmit] = useForm("xgopqvze");
-  const [showForm, setShowForm] = useState(true);
+  const [state, handleSubmit, reset] = useForm("xgopqvze");
 
   useEffect(() => {
     if (state.succeeded) {
@@ -24,7 +23,7 @@ export function QuoteForm() {
   const InputClass =
     "w-full px-4 py-3.5 rounded-xl bg-background border-2 border-border/60 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-4 focus:ring-primary/10 transition-all duration-200";
 
-  if (state.succeeded && showForm) {
+  if (state.succeeded) {
     return (
       <section id="quote" className="py-24 bg-secondary/30">
         <div className="container mx-auto px-4 md:px-6">
@@ -110,7 +109,7 @@ export function QuoteForm() {
                 <button
                   type="button"
                   onClick={() => {
-                    setShowForm(false);
+                    reset();
                     window.scrollTo({ top: 0, behavior: "smooth" });
                   }}
                   className="inline-flex items-center gap-2 text-foreground font-medium hover:text-primary transition-colors"
@@ -299,11 +298,15 @@ export function QuoteForm() {
                         <option value="" disabled>
                           Service needed
                         </option>
-                        <option value="Twice a Week Service">
-                          Twice a Week Service
+                        <option value="Weekly Service">Weekly Service</option>
+                        <option value="Twice a Month Service">
+                          Twice a Month Service
                         </option>
                         <option value="Monthly Service">Monthly Service</option>
                         <option value="Drain & Refill">Drain & Refill</option>
+                        <option value="Vacation Rental Care">
+                          Vacation Rental Care
+                        </option>
                         <option value="Not Sure Yet">Not Sure Yet</option>
                       </select>
                       <ValidationError

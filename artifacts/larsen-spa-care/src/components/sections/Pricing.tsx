@@ -15,14 +15,9 @@ export function Pricing() {
 
   return (
     <section id="pricing" className="py-24 relative overflow-hidden">
-      {/* Background with texture */}
+      {/* Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-secondary/50" />
-        <img 
-          src={`${import.meta.env.BASE_URL}images/sand-texture.png`} 
-          alt="" 
-          className="w-full h-full object-cover opacity-20 mix-blend-multiply"
-        />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -34,25 +29,26 @@ export function Pricing() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto items-center">
-          
+
           {/* Monthly */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="bg-white rounded-3xl p-8 shadow-lg border border-border/50 h-fit"
           >
             <h3 className="text-xl font-bold font-display text-foreground mb-2">Monthly</h3>
-            <div className="flex items-baseline gap-1 mb-6">
+            <div className="flex items-baseline gap-1 mb-2">
               <span className="text-4xl font-bold text-foreground">$110</span>
-              <span className="text-muted-foreground font-medium">/visit</span>
+              <span className="text-muted-foreground font-medium">/mo</span>
             </div>
+            <p className="text-sm font-medium text-primary mb-6">1 visit per month · same day each visit</p>
             <p className="text-muted-foreground mb-8 min-h-[48px]">Perfect for lower-use personal spas that just need an expert touch.</p>
             <Button variant="outline" className="w-full bg-transparent" onClick={() => scrollTo("quote")}>Choose Monthly</Button>
           </motion.div>
 
-          {/* Twice a Week (Featured) */}
-          <motion.div 
+          {/* Weekly (Featured) */}
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -61,12 +57,13 @@ export function Pricing() {
             <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-accent text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider shadow-sm whitespace-nowrap">
               Most Popular
             </div>
-            <h3 className="text-xl font-bold font-display text-white mb-2">Twice a Week</h3>
-            <div className="flex items-baseline gap-1 mb-6 text-white">
-              <span className="text-5xl font-bold">$15</span>
-              <span className="text-white/80 font-medium">/visit</span>
+            <h3 className="text-xl font-bold font-display text-white mb-2">Weekly</h3>
+            <div className="flex items-baseline gap-1 mb-2 text-white">
+              <span className="text-5xl font-bold">$130</span>
+              <span className="text-white/80 font-medium">/mo</span>
             </div>
-            <p className="text-white/90 mb-8 min-h-[48px]">Ideal for high-use spas that need frequent attention, cleaner water, and consistent balance.</p>
+            <p className="text-sm font-medium text-white/90 mb-6">4 visits per month · same day each week</p>
+            <p className="text-white/90 mb-8 min-h-[48px]">The most consistent water quality — ideal for high-use spas and vacation rentals. Just $20 more than Monthly.</p>
             <ul className="space-y-4 mb-8">
               {[
                 "Priority scheduling",
@@ -83,27 +80,47 @@ export function Pricing() {
               ))}
             </ul>
             <Button variant="accent" className="w-full bg-white text-primary hover:bg-white/90" size="lg" onClick={() => scrollTo("quote")}>
-              Choose Twice a Week
+              Choose Weekly
             </Button>
           </motion.div>
 
-          {/* Drain & Refill */}
-          <motion.div 
+          {/* Twice a Month */}
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="bg-white rounded-3xl p-8 shadow-lg border border-border/50 h-fit"
           >
-            <h3 className="text-xl font-bold font-display text-foreground mb-2">Drain & Refill</h3>
-            <div className="flex items-baseline gap-1 mb-6">
-              <span className="text-lg font-bold text-muted-foreground mr-1">Starting at</span>
-              <span className="text-4xl font-bold text-foreground">$130</span>
+            <h3 className="text-xl font-bold font-display text-foreground mb-2">Twice a Month</h3>
+            <div className="flex items-baseline gap-1 mb-2">
+              <span className="text-4xl font-bold text-foreground">$120</span>
+              <span className="text-muted-foreground font-medium">/mo</span>
             </div>
-            <p className="text-muted-foreground mb-8 min-h-[48px]">Complete water reset recommended every 2-3 months.</p>
-            <Button variant="outline" className="w-full bg-transparent" onClick={() => scrollTo("quote")}>Schedule Reset</Button>
+            <p className="text-sm font-medium text-primary mb-6">2 visits per month · same day each visit</p>
+            <p className="text-muted-foreground mb-8 min-h-[48px]">Steady care for regularly used spas that want more than a monthly check.</p>
+            <Button variant="outline" className="w-full bg-transparent" onClick={() => scrollTo("quote")}>Choose Twice a Month</Button>
           </motion.div>
 
         </div>
+
+        {/* One-time service */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-6xl mx-auto mt-8 bg-white rounded-3xl p-8 shadow-lg border border-border/50 flex flex-col md:flex-row md:items-center gap-6"
+        >
+          <div className="flex-grow">
+            <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground mb-1">One-time service</div>
+            <h3 className="text-xl font-bold font-display text-foreground mb-1">Drain &amp; Refill</h3>
+            <p className="text-muted-foreground">Complete water reset recommended every 2–3 months.</p>
+          </div>
+          <div className="flex items-baseline gap-1 shrink-0">
+            <span className="text-lg font-bold text-muted-foreground mr-1">Starting at</span>
+            <span className="text-4xl font-bold text-foreground">$130</span>
+          </div>
+          <Button variant="outline" className="bg-transparent shrink-0" onClick={() => scrollTo("quote")}>Schedule Reset</Button>
+        </motion.div>
 
         <p className="text-center text-sm text-muted-foreground mt-12 max-w-2xl mx-auto">
           *Pricing may vary for unusually large tubs, severe neglect, or special access conditions. We will always confirm final pricing before beginning service.

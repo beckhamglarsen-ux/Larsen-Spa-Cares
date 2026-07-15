@@ -25,7 +25,7 @@ export function Reviews() {
             <ShieldCheck className="w-8 h-8" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold font-display text-foreground mb-4">
-            Why Owners Choose Larsen Spa Care
+            What You Can Count On
           </h2>
           <p className="text-lg text-muted-foreground">
             Trusted local service for homeowners, rentals, and second homes in Desert Color.

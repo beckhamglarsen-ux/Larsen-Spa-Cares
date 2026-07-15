@@ -4,7 +4,7 @@ import { HelpCircle } from "lucide-react";
 const faqs = [
   {
     q: "How often should my hot tub be serviced?",
-    a: "Most hot tubs do best with routine professional service, especially in warm climates or high-use rental properties. Twice-a-week service is ideal for high-use spas, while monthly service can work well for lighter-use properties."
+    a: "Most hot tubs do best with routine professional service, especially in warm climates or high-use rental properties. We offer three plans — weekly ($130/mo), twice a month ($120/mo), and monthly ($110/mo) — always on a consistent day. Weekly is ideal for high-use spas and rentals; monthly works well for lighter-use properties."
   },
   {
     q: "Do you service vacation rentals?",

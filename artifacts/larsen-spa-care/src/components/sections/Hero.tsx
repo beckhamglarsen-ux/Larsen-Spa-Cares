@@ -37,7 +37,7 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6 border border-primary/20 shadow-sm">
               <MapPinIcon className="w-4 h-4" />
-              Professional Hot Tub Maintenance in Desert Color
+              Professional Hot Tub Maintenance in St. George, UT
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-[1.1] text-foreground mb-6">
@@ -50,7 +50,7 @@ export function Hero() {
             </h1>
             
             <h2 className="text-xl md:text-2xl text-foreground/80 font-medium mb-4 max-w-2xl">
-              Reliable spa care for Desert Color Resort homes, rentals, and second properties.
+              Reliable spa care for homes, rentals, and second properties across Desert Color, Red Rock, and Black Desert.
             </h2>
             
             <p className="text-lg text-muted-foreground mb-10 max-w-2xl leading-relaxed">
@@ -74,7 +74,7 @@ export function Hero() {
 
             {/* Trust Chips */}
             <div className="flex flex-wrap items-center gap-y-3 gap-x-6 mt-12 pt-8 border-t border-border/60">
-              <TrustChip icon={<Droplets className="w-4 h-4" />} text="Twice-a-week service" />
+              <TrustChip icon={<Droplets className="w-4 h-4" />} text="Weekly service plans" />
               <TrustChip icon={<ShieldCheck className="w-4 h-4" />} text="Satisfaction guaranteed" />
               <TrustChip icon={<Home className="w-4 h-4" />} text="Vacation rental friendly" />
             </div>
