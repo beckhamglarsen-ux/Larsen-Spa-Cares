@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { LogoIcon } from "@/components/brand/LogoIcon";
 
 export function Footer() {
   return (
@@ -10,9 +11,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-8">
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-display font-bold text-xl">
-                L
-              </div>
+              <LogoIcon className="w-10 h-10" />
               <span className="font-display font-bold text-2xl text-white">
                 Larsen Spa Care
               </span>

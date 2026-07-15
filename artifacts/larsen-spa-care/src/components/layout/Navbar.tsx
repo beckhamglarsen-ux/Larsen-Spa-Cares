@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { LogoIcon } from "@/components/brand/LogoIcon";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
@@ -52,9 +53,7 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer" onClick={() => window.scrollTo(0,0)}>
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white font-display font-bold text-xl shadow-lg">
-              L
-            </div>
+            <LogoIcon className="w-10 h-10" />
             <span className="font-display font-bold text-xl md:text-2xl text-foreground tracking-tight">
               Larsen Spa Care
             </span>
