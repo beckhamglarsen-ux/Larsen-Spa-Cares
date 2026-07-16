@@ -17,12 +17,13 @@ export function Hero() {
     <section className="relative pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden min-h-[90vh] flex items-center">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
-        <img 
-          src={`${import.meta.env.BASE_URL}images/hero-bg.jpg`} 
-          alt="Premium spa background" 
-          className="w-full h-full object-cover opacity-40 mix-blend-multiply"
+        <img
+          src={`${import.meta.env.BASE_URL}images/hero-bg.jpg`}
+          alt="Crystal-clear backyard spa in the St. George desert"
+          className="w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/95 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/75 to-background/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
       </div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
