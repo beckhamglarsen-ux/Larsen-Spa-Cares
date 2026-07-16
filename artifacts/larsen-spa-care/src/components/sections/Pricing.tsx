@@ -125,6 +125,11 @@ export function Pricing() {
         <p className="text-center text-sm text-muted-foreground mt-12 max-w-2xl mx-auto">
           *Pricing may vary for unusually large tubs, severe neglect, or special access conditions. We will always confirm final pricing before beginning service.
         </p>
+        <p className="text-center text-base font-medium text-foreground mt-4 max-w-2xl mx-auto">
+          Manage 5 or more properties? Volume rates available —{" "}
+          <a href="tel:8016616107" className="text-primary font-semibold hover:underline">call</a> or{" "}
+          <a href="sms:8016616107" className="text-primary font-semibold hover:underline">text</a> 801-661-6107.
+        </p>
       </div>
     </section>
   );
