@@ -19,10 +19,14 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src={`${import.meta.env.BASE_URL}images/hero-bg.jpg`}
-          alt="Crystal-clear backyard spa in the St. George desert"
-          className="w-full h-full object-cover opacity-80"
+          alt="Backyard hot tub at sunset overlooking the St. George valley and red rock cliffs"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/75 to-background/20" />
+        {/* gentle overall mute — reads as a background, photo still clearly visible */}
+        <div className="absolute inset-0 bg-background/20" />
+        {/* left scrim keeps the headline legible while revealing the photo on the right */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/45 to-transparent" />
+        {/* bottom fade into the next section */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
       </div>
 
