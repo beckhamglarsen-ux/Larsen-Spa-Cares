@@ -18,7 +18,7 @@ export function Hero() {
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src={`${import.meta.env.BASE_URL}images/hero-bg.png`} 
+          src={`${import.meta.env.BASE_URL}images/hero-bg.jpg`} 
           alt="Premium spa background" 
           className="w-full h-full object-cover opacity-40 mix-blend-multiply"
         />
