@@ -106,6 +106,19 @@ export function QuoteForm() {
                   </a>
                 </div>
 
+                <p className="text-sm text-muted-foreground mb-8">
+                  Had us out already?{" "}
+                  <a
+                    href="https://g.page/r/CR5mssaLgcDJEBM/review"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-primary hover:underline"
+                  >
+                    Leave us a Google review
+                  </a>{" "}
+                  — it helps a ton.
+                </p>
+
                 <button
                   type="button"
                   onClick={() => {

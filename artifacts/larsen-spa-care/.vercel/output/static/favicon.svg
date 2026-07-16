@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="34 58 212 180">
+  <defs>
+    <linearGradient id="wA" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#bff3f1"/>
+      <stop offset="45%" stop-color="#7ad9d6"/>
+      <stop offset="100%" stop-color="#3bbfbb"/>
+    </linearGradient>
+  </defs>
+  <path d="M140,230 L42,178 L42,160 L140,212 L238,160 L238,178 Z" fill="#0d1319" stroke="#0d1319" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M140,212 L42,160 L42,142 L140,194 L238,142 L238,160 Z" fill="#1A202D" stroke="#0d1319" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M140,194 L42,142 L42,124 L140,176 L238,124 L238,142 Z" fill="#2a3648" stroke="#0d1319" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M140,176 L42,124 L42,112 L140,164 L238,112 L238,124 Z" fill="#f0f2f5" stroke="#0d1319" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M140,164 L52,118 L52,112 L140,158 L228,112 L228,118 Z" fill="#1A202D" stroke="#0d1319" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M140,158 L52,112 L140,66 L228,112 Z" fill="url(#wA)" stroke="#0d1319" stroke-width="4" stroke-linejoin="round"/>
+</svg>

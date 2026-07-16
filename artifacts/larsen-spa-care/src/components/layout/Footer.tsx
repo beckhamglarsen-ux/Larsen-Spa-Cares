@@ -77,6 +77,14 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-background/50 text-sm">
           <p>© {new Date().getFullYear()} Larsen Spa Care. All rights reserved.</p>
+          <a
+            href="https://g.page/r/CR5mssaLgcDJEBM/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-background/70 hover:text-white transition-colors font-medium"
+          >
+            ★ Leave us a review on Google
+          </a>
         </div>
       </div>
     </footer>

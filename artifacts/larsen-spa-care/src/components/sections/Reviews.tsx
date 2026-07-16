@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
-import { ShieldCheck } from "lucide-react";
+import { ShieldCheck, Star } from "lucide-react";
+
+const GOOGLE_REVIEW_URL = "https://g.page/r/CR5mssaLgcDJEBM/review";
 
 const trustPoints = [
   {
@@ -28,7 +30,7 @@ export function Reviews() {
             What You Can Count On
           </h2>
           <p className="text-lg text-muted-foreground">
-            Trusted local service for homeowners, rentals, and second homes in Desert Color.
+            Trusted local service for homeowners, rentals, and second homes across St. George &amp; Washington County.
           </p>
         </div>
 
@@ -50,6 +52,18 @@ export function Reviews() {
               </p>
             </motion.div>
           ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <a
+            href={GOOGLE_REVIEW_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-xl border-2 border-primary text-primary px-6 py-3 font-semibold hover:bg-primary/5 transition"
+          >
+            <Star className="w-5 h-5" />
+            Had us out already? Review us on Google
+          </a>
         </div>
       </div>
     </section>
